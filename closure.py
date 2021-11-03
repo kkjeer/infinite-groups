@@ -430,6 +430,8 @@ def numInRange(num, r):
 # Returns a map of number => list of numbers where,
 # for each key k that is present in both maps l and r:
 # result[k] = l[key] intersect r[key]
+# If a key k is present in l but not r: result[key] = l[key]
+# If a key k is present in r but not l: result[key] = r[key]
 def intersectMaps(l, r):
     result = {}
     for key in l:
