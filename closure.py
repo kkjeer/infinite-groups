@@ -177,7 +177,6 @@ def inferOneModVal(f, num, vals):
 def getAllowedRanges(c):
     ranges = []
     ors = c.flatten()
-    ranges = []
     bottoms = []
     tops = []
     for elt in ors:
