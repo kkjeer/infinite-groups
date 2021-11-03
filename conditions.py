@@ -89,6 +89,17 @@ class LogicVar(Condition):
     def __str__(self):
         return self.name
 
+    def compare(self, other):
+      if isinstance(other, LogicVar):
+        if self.name < other.name:
+          return -1
+        elif self.name == other.name:
+          return 0
+        else:
+          return 1
+      else:
+        return -1
+
 
 # (Boolean, Boolean) -> Boolean
 class And(Condition):

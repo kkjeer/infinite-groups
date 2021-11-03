@@ -64,7 +64,7 @@ class Math:
     # Returns a list of expressions that coalesce the children of commutative
     # and associative operators.
     # For example, Add(Add(x, y), z) will be flattened to [x, y, z].
-    def flatten(self, operator):
+    def flatten(self, operator = ""):
         return [self]
 
     # If this expression can be expressed as c * v, where c is a constant
@@ -381,7 +381,7 @@ class Mult(BinaryMath):
             if lExists:
                 rlVal, rlExists = r.left.eval()
                 if rlExists:
-                    l = Num(lVal * lrVal)
+                    l = Num(lVal * rlVal)
                     r = r.right
 
         # Transform a * (e * b) to c * e, where c is a * b

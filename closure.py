@@ -50,7 +50,7 @@ def checkMod(target, inferred):
     for key in target:
         if key not in inferred:
             raise ValueError(
-                "!!! Error: inferred mod vals  does not contain an entry for target key " + str(key), + " !!!")
+                "!!! Error: inferred mod vals does not contain an entry for target key " + str(key) + " !!!")
             return False
         if not isSubset(inferred[key], target[key]):
             return False
