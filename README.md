@@ -1,6 +1,6 @@
-# infinite-groups
+# Infinite Groups
 
-Infinite groups uses ideas from abstract algebra to test whether a given
+Uses ideas from abstract algebra to test whether a given
 boolean function and a given integer function form an integer group or not.
 
 An integer group consists of a set of integers and operation over integers.
